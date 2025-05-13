@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birds of Wisconsin Book | Sara Lachajewski</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="/../js/theme.js"></script>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/../css/styles.css">
+  <link rel="stylesheet" href="/../css/header.css">
+  <link rel="stylesheet" href="/../css/singleproj.css">
+</head>
+
+
+<body>
+  <!-- Header / Navigation Bar -->
+  <header id="header"></header>
+  <script src="/../js/header.js"></script>
+
+  <!-- Main Page Content -->
+  <main>
+    <a id="backBtn" class="borderBtn borderBtnSm" href="/">
+      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9">
+        <polyline points="6 1 1 4.5 6 9"/>
+      </svg>
+      &nbsp;All Projects
+    </a>
+
+    <h1>Birds of Wisconsin Book</h1>
+
+    <!-- -------------- PROJECT DETAILS -------------- -->
+    <div id="projDetails">
+
+      <img id="mainImg" src="/../images/BirdBook/birds-of-wisconsin-cover.png"
+      alt="Birds of Wisconsin Book Cover"/>
+
+      <div id="textContent">
+
+        <section id="timeline">
+          <h3>Timeline</h3>
+          <p>May 2024</p>
+        </section>
+
+        <section id="tools">
+          <h3>Software & Tools</h3>
+          <ul>
+            <li>Watercolor</li>
+            <li>Photoshop</li>
+            <li>InDesign</li>
+          </ul>
+        </section>
+
+        <section id="overview">
+          <h3>Project Overview</h3>
+          <p>
+            For this project I was to write and design a short book. I chose to create a children's 
+            book about the birds that can commonly be found in Wisconsin. I opted to paint the 
+            illustrations with watercolor. I used Photoshop to digitize my paintings and InDesign
+            for the book layout and typography.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- ------------------ GALLERY ------------------ -->
+    <section id="gallery">
+
+      <!-- Gallery arrows -->
+      <button id="previousSlideBtn" class="galleryArrowBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14.5" height="22" viewBox="0 0 14.5 22">
+          <polyline  points="13.5 1 1 11 13.5 21"/>
+        </svg>
+      </button>
+
+      <button id="nextSlideBtn" class="galleryArrowBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14.5" height="22" viewBox="0 0 14.5 22">
+          <polyline points="1 1 13.5 11 1 21"/>
+        </svg>
+      </button>
+
+
+      <!-- Gallery slide images -->
+      <div id="imageSlides">
+
+        <figure class="active">
+          <img src="/../images/BirdBook/bird-book-contents.png" 
+               alt="Birds of Wisconsin Book Table of Contents Spread" />
+          <figcaption>
+            Table of Contents Spread
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="/../images/BirdBook/bird-book-year-round.png" 
+               alt="Birds of Wisconsin Book Year-Round Birds Spread" />
+          <figcaption>
+            Year-Round Birds Spread
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="/../images/BirdBook/bird-book-summer.png" 
+               alt="Birds of Wisconsin Book Summer Birds Spread"/>
+          <figcaption>
+            Summer Birds Spread
+          </figcaption>
+        </figure>
+        
+      </div>
+    </section>
+
+    <!-- --------------- GALLERY MODAL --------------- -->
+    <div id="galleryModal" class="modal">
+      <button id="closeBtn">&times;</button>
+      <img id="modalImg" class="modalContent">
+    </div>
+
+    <script src="/../js/gallery.js"></script>
+
+    <!-- ------------ PROJECT NAVIGATION ------------- -->
+
+    <nav id="projNav">
+
+      <a id="prevProjBtn" class="borderBtn" href="/projects/The_Grind_Cafe_Menu.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11">
+          <polyline points="7 1 1 5.5 7 11"/>
+        </svg>
+        &nbsp;Previous Project
+      </a>
+
+      <a id="nextProjBtn" class="borderBtn" href="FIX_THIS!">
+        Next Project&nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11">
+          <polyline points="1 1 7 5.5 1 11"/>
+        </svg>
+      </a>
+    </nav>
+  </main>
+
+
+
+</body>
+</html>
