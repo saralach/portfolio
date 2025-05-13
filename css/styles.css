@@ -13,6 +13,8 @@
   --text-color-400: #464343;
   --text-color-500: #333131;
 
+  --modal-bg-color: /*#333131*/ rgba(51, 49, 49, .8);
+
   --accent-color-100: #dfe9e1;
   --accent-color-200: #d6eedc;
   --accent-color-500: #a3b693;

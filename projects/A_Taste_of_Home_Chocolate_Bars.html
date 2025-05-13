@@ -27,21 +27,22 @@
 
   <!-- Main Page Content -->
   <main>
-    <a id="backbtn" href="/">
+    <a id="backBtn" href="/">
       <svg id="backsvg" xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11">
-        <polyline  points="7 1 1 5.5 7 11"/>
+        <polyline points="7 1 1 5.5 7 11"/>
       </svg>
       &nbsp;Back
     </a>
+
     <h1>A Taste of Home Chocolate Bar Packaging</h1>
 
     <!-- -------------- PROJECT DETAILS -------------- -->
-    <div id="projdetails">
+    <div id="projDetails">
 
-      <img id="mainimg" src="/../images/ChocolateBars/Chocolate-Bar-Mockup.png"
+      <img id="mainImg" src="/../images/ChocolateBars/Chocolate-Bar-Mockup.png"
       alt="A Taste of Home Chocolate Bar Packaging Mockups"/>
 
-      <div id="textcontent">
+      <div id="textContent">
 
         <section id="timeline">
           <h3>Timeline</h3>
@@ -76,48 +77,69 @@
     <section id="gallery">
       <!-- Gallery arrows -->
       <button>
-        <svg id="previous" class="galleryarrow" xmlns="http://www.w3.org/2000/svg" width="14.5" height="22" viewBox="0 0 14.5 22">
+        <svg id="previous" class="galleryArrow" xmlns="http://www.w3.org/2000/svg" 
+             width="14.5" height="22" viewBox="0 0 14.5 22">
           <polyline  points="13.5 1 1 11 13.5 21"/>
         </svg>
       </button>
 
       <button>
-        <svg id="next" class="galleryarrow" xmlns="http://www.w3.org/2000/svg" width="14.5" height="22" viewBox="0 0 14.5 22">
+        <svg id="next" class="galleryArrow" xmlns="http://www.w3.org/2000/svg" 
+             width="14.5" height="22" viewBox="0 0 14.5 22">
           <polyline points="1 1 13.5 11 1 21"/>
         </svg>
       </button>
 
 
       <!-- Gallery slide images -->
-      <div id="imageslides">
+      <div id="imageSlides">
 
         <figure class="slide active">
-          <img src="/../images/ChocolateBars/purse-lifestyle-photo.png" alt="Yuzu Citrus Chocolate Bar Lifestyle Photo" />
-          <figcaption>A Taste of Home Yuzu Citrus Chocolate Bar Lifestyle Photo (Photoshop)</figcaption>
+          <img src="/../images/ChocolateBars/purse-lifestyle-photo.png" 
+               alt="Yuzu Citrus Chocolate Bar Lifestyle Photo" />
+          <figcaption>
+            A Taste of Home Yuzu Citrus Chocolate Bar Lifestyle Photo (Photoshop)
+          </figcaption>
         </figure>
 
         <figure class="slide">
-          <img src="/../images/ChocolateBars/suitcase-lifestyle-photo.png" alt="Matcha Green Tea Chocolate Bar Lifestyle Photo"/>
-          <figcaption>A Taste of Home Matcha Green Tea Chocolate Bar Lifestyle Photo (Photoshop)</figcaption>
+          <img src="/../images/ChocolateBars/suitcase-lifestyle-photo.png" 
+               alt="Matcha Green Tea Chocolate Bar Lifestyle Photo"/>
+          <figcaption>
+            A Taste of Home Matcha Green Tea Chocolate Bar Lifestyle Photo (Photoshop)
+          </figcaption>
         </figure>
 
         <figure class="slide">
-          <img src="/../images/ChocolateBars/choco-bar-physical-boxes.png" alt="Physical Chocolate Bar Boxes" />
+          <img src="/../images/ChocolateBars/choco-bar-physical-boxes.png" 
+               alt="Physical Chocolate Bar Boxes" />
           <figcaption>A Taste of Home Physical Chocolate Bar Boxes</figcaption>
         </figure>
 
         <figure class="slide">
-          <img src="/../images/ChocolateBars/sando-outer.png" alt="Fruit Sando Chocolate Bar Outer Package Dieline"/>
-          <figcaption>A Taste of Home Fruit Sando Chocolate Bar Outer Packaging Dieline (Illustrator)</figcaption>
+          <img src="/../images/ChocolateBars/sando-outer.png" 
+               alt="Fruit Sando Chocolate Bar Outer Package Dieline"/>
+          <figcaption>
+            A Taste of Home Fruit Sando Chocolate Bar Outer Packaging Dieline (Illustrator)
+          </figcaption>
         </figure>
 
         <figure class="slide">
-          <img src="/../images/ChocolateBars/sando-inner.png" alt="Fruit Sando Chocolate Bar Outer Package Dieline"/>
-          <figcaption>A Taste of Home Fruit Sando Chocolate Bar Inner Packaging Dieline (Illustrator)</figcaption>
+          <img src="/../images/ChocolateBars/sando-inner.png" 
+               alt="Fruit Sando Chocolate Bar Outer Package Dieline"/>
+          <figcaption>
+            A Taste of Home Fruit Sando Chocolate Bar Inner Packaging Dieline (Illustrator)
+          </figcaption>
         </figure>
         
       </div>
     </section>
+
+    <!-- Modal Popup For Gallery -->
+    <div id="galleryModal" class="modal">
+      <button id="closeBtn">&times;</button>
+      <img id="modalImg" class="modalContent">
+    </div>
 
     <script src="/../js/gallery.js"></script>
   </main>

@@ -1,21 +1,20 @@
-#backbtn {
+#backBtn {
   margin-block-start: 1.25rem;
 }
 
-
-#projdetails {
+#projDetails {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   font-size: 1.2rem;
 }
 
-#textcontent {
+#textContent {
   grid-column: 2 / 2;
   grid-row: 1 / 1;
 }
 
-#mainimg {
+#mainImg {
   margin-inline: 1rem;
   grid-column: 1 / 1;
   grid-row: 1 / 1;
@@ -51,14 +50,13 @@ h3 {
   position: relative;
   user-select: none;
 
-  /* --------- Images --------- */
-  #imageslides {
+  /* --------- Gallery Images --------- */
+  #imageSlides {
     text-align: center;
 
     figure {
       display: none;
       
-
       &.active {
         display: block;
       }
@@ -75,9 +73,9 @@ h3 {
       }
     }
   }
-
-  /* --------- Arrows --------- */
-  .galleryarrow {
+  
+  /* --------- Gallery Arrows --------- */
+  .galleryArrow {
     fill: none;
     stroke: var(--text-color-200);
     stroke-linecap: round;
@@ -94,7 +92,47 @@ h3 {
   #next {
     right: 0%;
   }
-}
+
+} /* end gallery */
+
+
+/* ================== Gallery Modal ================== */
+  .modal {
+    user-select: none;
+    display: none; 
+    position: fixed;
+    z-index: 100;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--modal-bg-color);
+  }
+
+  .modalContent {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  #closeBtn {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    color: var(--bg-color-300);
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    /*transition: 0.3s;*/
+  }
+  
+  #closeBtn:hover {
+    color: var(--bg-color-700);
+  }
 
 
 
@@ -132,7 +170,7 @@ h3 {
     grid-row: 2 / 2;
   }
 
-  #imageslides {
+  #imageSlides {
     grid-column: 1 / 1;
     grid-row: 1 / 1;
     padding-inline: 2rem;
@@ -180,7 +218,7 @@ h3 {
 }
 
 
-.galleryarrow {
+.galleryArrow {
   fill: none;
   stroke: var(--text-color-200);
   stroke-linecap: round;
