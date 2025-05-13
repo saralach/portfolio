@@ -1,13 +1,14 @@
+#backbtn {
+  margin-block-start: 1.25rem;
+}
+
+
 #projdetails {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   font-size: 1.2rem;
 }
-
-/*main {
-  padding-inline-end: 0;
-}*/
 
 #textcontent {
   grid-column: 2 / 2;
@@ -43,6 +44,62 @@ h3 {
 
 /* ================= Gallery Section ================= */
 #gallery {
+  margin-block-start: .5rem;
+  padding-block-start: .5rem;
+  border-block-start: var(--page-divider);
+  padding-inline: 2rem;
+  position: relative;
+  user-select: none;
+
+  /* --------- Images --------- */
+  #imageslides {
+    text-align: center;
+
+    figure {
+      display: none;
+      
+
+      &.active {
+        display: block;
+      }
+
+      img {
+
+        max-width: 100%;
+        max-height: 35rem;
+      }
+
+      figcaption {
+        margin-block-start: .5rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  /* --------- Arrows --------- */
+  .galleryarrow {
+    fill: none;
+    stroke: var(--text-color-200);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3px;
+    position: absolute;
+    top: 45%;
+  }
+  
+  #previous {
+    left: 0%;
+  }
+  
+  #next {
+    right: 0%;
+  }
+}
+
+
+
+
+/*#gallery {
   margin-block-start: .5rem;
   padding-block-start: 1.5rem;
   border-block-start: 1px solid var(--bg-color-600);
@@ -114,7 +171,7 @@ h3 {
     width: 14px;
     height: 14px;
     border-radius: 14px;
-    background-color: var(--bg-color-700);
+    background-color: var(--bg-color-800);
   }
 
   input:checked + label {
@@ -142,96 +199,4 @@ h3 {
   top: 45%;
   right: 0%;
 }
-
-
-
-/*#gallery {
-  display: grid;
-  grid-template-columns: 30px 1fr 30px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-block-start: 1.5rem;
-
-
-
-  button {
-    border: none;
-    background-color: inherit;
-  
-    .slidearrow {
-      fill: none;
-      stroke: var(--text-color-200);
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-width: 4px;
-    }
-  }
-  
-  #imageslidescontainer {
-    grid-column: 2 / 2;
-    text-align: center;
-    margin-inline: 1rem;
-    background-color: violet;
-
-
-  
-    img {
-      max-width: 100%;
-      width: auto;
-      max-height: 35rem;
-    }
-  }
-  
-}
-
-#slideselectors {
-  margin-block-start: .5rem;
-  position: relative;
-
-  input {
-    display: none;
-  }
-  
-  label {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    border-radius: 14px;
-
-    background-color: var(--bg-color-700);
-  }
-
-  input:checked + label {
-    background-color: var(--accent-color-700);
-  }
-}
-
-
-
-#gallerycentercol {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
-
-  #imageslidescontainer {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-  }
-
-  #slideselectors {
-    grid-column: 1 / 1;
-    grid-row: 2 / 2;
-  }
-}
-
-input#sl1:checked ~ .navigation label[for="slide1"],
-input#sl2:checked ~ .navigation label[for="slide2"],
-input#sl3:checked ~ .navigation label[for="slide3"] {
-  background: #f00;
-}
-
-
-#slide1 ~ {
-
-}*/
+*/

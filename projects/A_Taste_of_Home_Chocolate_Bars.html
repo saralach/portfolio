@@ -11,11 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
   <!-- JavaScript -->
-  <script src="/../js/set-theme.js"></script>
-  <script src="/../js/switch-theme.js"></script>
+  <script src="/../js/theme.js"></script>
   
   <!-- CSS -->
   <link rel="stylesheet" href="/../css/styles.css">
+  <link rel="stylesheet" href="/../css/header.css">
   <link rel="stylesheet" href="/../css/singleproj.css">
 </head>
 
@@ -27,8 +27,15 @@
 
   <!-- Main Page Content -->
   <main>
+    <a id="backbtn" href="/">
+      <svg id="backsvg" xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11">
+        <polyline  points="7 1 1 5.5 7 11"/>
+      </svg>
+      &nbsp;Back
+    </a>
     <h1>A Taste of Home Chocolate Bar Packaging</h1>
 
+    <!-- -------------- PROJECT DETAILS -------------- -->
     <div id="projdetails">
 
       <img id="mainimg" src="/../images/ChocolateBars/Chocolate-Bar-Mockup.png"
@@ -38,7 +45,7 @@
 
         <section id="timeline">
           <h3>Timeline</h3>
-          <p>March – April 2024, February 2025</p>
+          <p>March &#8211; April 2024, February 2025</p>
         </section>
 
         <section id="tools">
@@ -65,62 +72,54 @@
       </div>
     </div>
 
+    <!-- ------------------ GALLERY ------------------ -->
     <section id="gallery">
-      <svg id="previousarrow" xmlns="http://www.w3.org/2000/svg" width="14.5" height="22" viewBox="0 0 14.5 22">
-        <polyline class="galleryarrow" points="13.5 1 1 11 13.5 21"/>
-      </svg>
+      <!-- Gallery arrows -->
+      <button>
+        <svg id="previous" class="galleryarrow" xmlns="http://www.w3.org/2000/svg" width="14.5" height="22" viewBox="0 0 14.5 22">
+          <polyline  points="13.5 1 1 11 13.5 21"/>
+        </svg>
+      </button>
 
-      <svg id="nextarrow" xmlns="http://www.w3.org/2000/svg" width="14.5" height="22" viewBox="0 0 14.5 22">
-        <polyline class="galleryarrow" points="1 1 13.5 11 1 21"/>
-      </svg>
+      <button>
+        <svg id="next" class="galleryarrow" xmlns="http://www.w3.org/2000/svg" width="14.5" height="22" viewBox="0 0 14.5 22">
+          <polyline points="1 1 13.5 11 1 21"/>
+        </svg>
+      </button>
 
-      <div id="radiobuttons">
-        <input type="radio" name="slider" id="sl1" checked />
-        <label for="sl1"></label>
 
-        <input type="radio" name="slider" id="sl2" />
-        <label for="sl2"></label>
-
-        <input type="radio" name="slider" id="sl3" />
-        <label for="sl3"></label>
-
-        <input type="radio" name="slider" id="sl4" />
-        <label for="sl4"></label>
-        
-        <input type="radio" name="slider" id="sl5" />
-        <label for="sl5"></label>
-      </div>
-
+      <!-- Gallery slide images -->
       <div id="imageslides">
-        <figure id="slide">
+
+        <figure class="slide active">
+          <img src="/../images/ChocolateBars/purse-lifestyle-photo.png" alt="Yuzu Citrus Chocolate Bar Lifestyle Photo" />
+          <figcaption>A Taste of Home Yuzu Citrus Chocolate Bar Lifestyle Photo (Photoshop)</figcaption>
+        </figure>
+
+        <figure class="slide">
+          <img src="/../images/ChocolateBars/suitcase-lifestyle-photo.png" alt="Matcha Green Tea Chocolate Bar Lifestyle Photo"/>
+          <figcaption>A Taste of Home Matcha Green Tea Chocolate Bar Lifestyle Photo (Photoshop)</figcaption>
+        </figure>
+
+        <figure class="slide">
           <img src="/../images/ChocolateBars/choco-bar-physical-boxes.png" alt="Physical Chocolate Bar Boxes" />
           <figcaption>A Taste of Home Physical Chocolate Bar Boxes</figcaption>
         </figure>
 
-        <figure id="slide2">
-          <img src="/../images/ChocolateBars/purse-lifestyle-photo.png" alt="Yuzu Citrus Chocolate Bar Lifestyle Photo" />
-          <figcaption>A Taste of Home Yuzu Citrus Chocolate Bar Lifestyle Photo</figcaption>
-        </figure>
-
-        <figure id="slide3">
-          <img src="/../images/ChocolateBars/suitcase-lifestyle-photo.png" alt="Matcha Green Tea Chocolate Bar Lifestyle Photo"/>
-          <figcaption>A Taste of Home Matcha Green Tea Chocolate Bar Lifestyle Photo</figcaption>
-        </figure>
-
-        <figure id="slide4">
+        <figure class="slide">
           <img src="/../images/ChocolateBars/sando-outer.png" alt="Fruit Sando Chocolate Bar Outer Package Dieline"/>
-          <figcaption>A Taste of Home Fruit Sando Chocolate Bar Outer Packaging Dieline</figcaption>
+          <figcaption>A Taste of Home Fruit Sando Chocolate Bar Outer Packaging Dieline (Illustrator)</figcaption>
         </figure>
 
-        <figure id="slide5">
+        <figure class="slide">
           <img src="/../images/ChocolateBars/sando-inner.png" alt="Fruit Sando Chocolate Bar Outer Package Dieline"/>
-          <figcaption>A Taste of Home Fruit Sando Chocolate Bar Inner Packaging Dieline</figcaption>
+          <figcaption>A Taste of Home Fruit Sando Chocolate Bar Inner Packaging Dieline (Illustrator)</figcaption>
         </figure>
-
-        
         
       </div>
     </section>
+
+    <script src="/../js/gallery.js"></script>
   </main>
 
 </body>

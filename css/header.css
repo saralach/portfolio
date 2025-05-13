@@ -1,0 +1,50 @@
+/* ============== Header/Navigation ============== */
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-block: .75rem;
+  border-block-end: var(--page-divider);
+
+  ul {
+    padding-inline-start: 0;
+  }
+  
+  li {
+    list-style: none;
+    display: inline;
+    padding-block: .5rem;
+    padding-inline: 1rem;
+    font-weight: 500;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--text-color-500);
+  }
+}
+
+#logosvg {
+  fill: var(--text-color-500);
+  width: 100%;
+  height: auto;
+  max-width: /*42.62px*/ 34px;
+  margin-inline-end: 2rem;
+}
+
+#themetoggle {
+  background-color: inherit;
+  border: none;
+
+  svg {
+    fill: none;
+    stroke: var(--text-color-500);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.5px;
+    max-width: 24.65px;
+  }
+}
