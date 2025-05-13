@@ -1,5 +1,6 @@
 /* =============== Colors / Themes =============== */
 :root {
+  /* Main Colors */
   --bg-color-300: #fcfcfc;
   --bg-color-400: #f8f8f8;
   --bg-color-500: #f3f3f3;
@@ -13,24 +14,29 @@
   --text-color-400: #464343;
   --text-color-500: #333131;
 
-  --modal-bg-color: /*#333131*/ rgba(51, 49, 49, .8);
-
   --accent-color-100: #dfe9e1;
   --accent-color-200: #d6eedc;
   --accent-color-500: #a3b693;
   --accent-color-700: #638357;
 
+  /* Tool Colors */
   --color-ai: #d39539;
   --color-ps: #376a94;
   --color-id: #a31a4f;
   --color-misc: #637455;
 
+  /* Modal Colors */
+  --modal-bg-color: rgba(51, 49, 49, .8);
+  --modal-x-color: #fcfcfc;
+  --modal-x-hover-color: #dbdbdb;
 
+  /* Page Divider Border */
   --page-divider: 1px solid var(--bg-color-700);
 
 }
 
 [data-theme="dark"] {
+  /* Main Colors */
   --bg-color-300: #413f44;
   --bg-color-400: #3a383d;
   --bg-color-500: #2f2d33;
@@ -70,7 +76,7 @@ h1 {
 
 
 /* ================= Utility Classes ================= */
-.borderbtn {
+.borderBtn {
   display: block;
   width: fit-content;
   text-decoration: none;

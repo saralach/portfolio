@@ -1,4 +1,4 @@
-let currentIndex = 0;
+let currentSlideIndex = 0;
 const slides = document.querySelectorAll("#gallery figure");
 const totalSlides = slides.length;
 
@@ -6,23 +6,23 @@ const modal = document.getElementById("galleryModal");
 const modalImg = document.getElementById("modalImg");
 const closeModalBtn = document.getElementById("closeBtn");
 
-// =============== Slide Arrows Functionality ===============
-document.querySelector("#next").addEventListener("click", () => {
-  changeSlide(currentIndex + 1);
+// ==================== Slide Arrows Functionality ====================
+document.querySelector("#nextSlideBtn").addEventListener("click", () => {
+  changeSlide(currentSlideIndex + 1);
 });
 
-document.querySelector("#previous").addEventListener("click", () => {
-  changeSlide(currentIndex - 1);
+document.querySelector("#previousSlideBtn").addEventListener("click", () => {
+  changeSlide(currentSlideIndex - 1);
 });
 
 function changeSlide(index) {
-  slides[currentIndex].classList.remove("active");
-  currentIndex = (index + totalSlides) % totalSlides;
-  slides[currentIndex].classList.add("active");
+  slides[currentSlideIndex].classList.remove("active");
+  currentSlideIndex = (index + totalSlides) % totalSlides;
+  slides[currentSlideIndex].classList.add("active");
 }
 
 
-// ================== Modal Functionality ===================
+// ======================= Modal Functionality ========================
 // Enable clicking on an image to open modal
 slides.forEach(slide => {
   slide.addEventListener("click", () => {
@@ -33,10 +33,8 @@ slides.forEach(slide => {
 });
 
 // Closing modal with X button
-slides.forEach(slide => {
-  closeModalBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
+closeModalBtn.addEventListener("click", () => {
+  modal.style.display = "none";
 });
 
 // Closing modal by clicking outside of the modal

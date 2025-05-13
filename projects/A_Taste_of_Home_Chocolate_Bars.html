@@ -27,7 +27,7 @@
 
   <!-- Main Page Content -->
   <main>
-    <a id="backBtn" href="/">
+    <a id="backBtn" class="borderBtn" href="/">
       <svg id="backsvg" xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11">
         <polyline points="7 1 1 5.5 7 11"/>
       </svg>
@@ -75,17 +75,16 @@
 
     <!-- ------------------ GALLERY ------------------ -->
     <section id="gallery">
+
       <!-- Gallery arrows -->
-      <button>
-        <svg id="previous" class="galleryArrow" xmlns="http://www.w3.org/2000/svg" 
-             width="14.5" height="22" viewBox="0 0 14.5 22">
+      <button id="previousSlideBtn" class="galleryArrowBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14.5" height="22" viewBox="0 0 14.5 22">
           <polyline  points="13.5 1 1 11 13.5 21"/>
         </svg>
       </button>
 
-      <button>
-        <svg id="next" class="galleryArrow" xmlns="http://www.w3.org/2000/svg" 
-             width="14.5" height="22" viewBox="0 0 14.5 22">
+      <button id="nextSlideBtn" class="galleryArrowBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14.5" height="22" viewBox="0 0 14.5 22">
           <polyline points="1 1 13.5 11 1 21"/>
         </svg>
       </button>
@@ -135,7 +134,7 @@
       </div>
     </section>
 
-    <!-- Modal Popup For Gallery -->
+    <!-- --------------- GALLERY MODAL --------------- -->
     <div id="galleryModal" class="modal">
       <button id="closeBtn">&times;</button>
       <img id="modalImg" class="modalContent">
