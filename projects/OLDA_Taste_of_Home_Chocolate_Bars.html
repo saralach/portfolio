@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Taste of Home Chocolate Bar Packaging | Sara Lachajewski</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="/../js/set-theme.js"></script>
+  <script src="/../js/switch-theme.js"></script>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/../css/styles.css">
+  <link rel="stylesheet" href="/../css/singleproj.css">
+</head>
+
+
+<body>
+  <!-- Header / Navigation Bar -->
+  <header id="header"></header>
+  <script src="/../js/header.js"></script>
+
+  <!-- Main Page Content -->
+  <main>
+    <h1>A Taste of Home Chocolate Bar Packaging</h1>
+
+    <div id="projdetails">
+
+      <img id="mainimg" src="/../images/ChocolateBars/Chocolate-Bar-Mockup.png"
+      alt="A Taste of Home Chocolate Bar Packaging Mockups"/>
+
+      <div id="textcontent">
+
+        <section id="timeline">
+          <h3>Timeline</h3>
+          <p>March – April 2024, February 2025</p>
+        </section>
+
+        <section id="tools">
+          <h3>Software & Tools</h3>
+          <ul>
+            <li>Illustrator</li>
+            <li>Photoshop</li>
+          </ul>
+        </section>
+
+        <section id="overview">
+          <h3>Project Overview</h3>
+          <p>
+            For this project, I was assigned to create chocolate bar designs inspired by 
+            a particular artist or designer. The designer I was assigned was Do Ho Suh. 
+            A common theme of Suh's work is a feeling of displacement from one's culture 
+            and one's home. With that in mind, I chose to create "A Taste of Home", a brand of 
+            chocolate bars with flavors from around the world, since such a product could help 
+            ease such feelings of displacement when one is far away from their home and their 
+            culture. I chose to use brightly-colored line drawings to emulate the colors and 
+            the stitchwork that can be found on many of Suh's fabric structures.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <section id="gallery">
+      <button>
+        <svg id="previous" width="14.5" height="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.5 22">
+          <polyline class="slidearrow" points="13.5 1 1 11 13.5 21"/>
+        </svg>
+      </button>
+      <div id="gallerycentercol">
+        <div id="slideselectors">
+          <input type="radio" name="slider" id="sl1" checked />
+          <label for="sl1"></label>
+
+          <input type="radio" name="slider" id="sl2" />
+          <label for="sl2"></label>
+
+          <input type="radio" name="slider" id="sl3" />
+          <label for="sl3"></label>
+        </div>
+        <div id="imageslidescontainer">
+          <img id="slide1" src="/../images/ChocolateBars/choco-bar-physical-boxes.png"/>
+          <img id="slide2" class="hidden" src="/../images/ChocolateBars/purse-lifestyle-photo.png"/>
+          <img id="slide3" class="hidden" src="/../images/ChocolateBars/suitcase-lifestyle-photo.png"/>
+        </div>
+      </div>
+
+      <button>
+        <svg id="next" width="14.5" height="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.5 22">
+          <polyline class="slidearrow" points="1 1 13.5 11 1 21"/>
+        </svg>
+      </button>
+    </section>
+  </main>
+
+</body>
+</html>

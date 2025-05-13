@@ -1,0 +1,119 @@
+section#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 3vw;
+}
+
+.projectcard {
+  display: flex;
+  flex-direction: column;
+  padding-block-start: .5rem;
+  padding-block-end: 1.375rem;
+  padding-inline: .875rem;
+  border: 1px solid var(--bg-color-600);
+  border-radius: 1rem;
+  background-color: var(--bg-color-400);
+  text-decoration: none;
+
+  h4, .category, .toolscontainer {
+    margin-inline: .5rem;
+    color: var(--text-color-500);
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  .category {
+    margin-block-start: .25rem;
+    color: var(--text-color-400);
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1, 1.1);
+      transition-duration: .4s;
+    }
+  }
+}
+
+
+/* ============ Project Thumbnail Image ============ */
+.projimg {
+  width: 100%;
+  background-color: var(--accent-color-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: .25rem;
+  margin-block-end: 1rem;
+  overflow: hidden;
+  border-radius: .75rem;
+  max-height: 20rem;
+  height: 20rem;
+  user-select: none;
+
+
+  img {
+    margin: 1.5rem;
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: cover;
+
+    border-radius: .625rem;
+  }
+  
+
+}
+
+/* ============ Image Background Colors ============ */
+#chocobars .projimg {
+  background-color: #f1dde3;
+}
+
+#birdbook .projimg {
+  background-color: #eee0d2;
+}
+
+#carrollpromo .projimg {
+  background-color: #dfe3e9;
+}
+
+#floapp .projimg {
+  background-color: #dfe9e9;
+}
+
+
+/* ============ Tools/Technologies Used ============ */
+.toolscontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: .375rem;
+  margin-block-start: .625rem;
+
+  p {
+    color: #f3f3f3;
+    background-color: #7692ee;
+    padding-inline: .625rem;
+    padding-block-start: .125rem;
+    padding-block-end: .25rem;
+    border-radius: .75rem;
+    font-size: 0.875rem;
+
+    &.ps { background-color: var(--color-ps); }
+    &.ai { background-color: var(--color-ai); }
+    &.id { background-color: var(--color-id); }
+    &.watercolor { background-color: var(--color-misc); }
+  }
+}
+
+
+/* ================= Media Queries ================= */
+@media screen and (min-width: 1200px) {
+  section#projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
