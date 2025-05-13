@@ -154,3 +154,18 @@ h3 {
   padding-inline: 2rem;
   justify-content: space-between;
 }
+
+
+
+#emailContent {
+  border-block-start: var(--page-divider);
+  padding-block-start: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Remove gaps between images */
+  td {
+    line-height: 0;
+  }
+}
