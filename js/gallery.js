@@ -27,7 +27,7 @@ function changeSlide(index) {
 slides.forEach(slide => {
   slide.addEventListener("click", () => {
     const slideImg = slide.querySelector("img");
-    modal.style.display = "block";
+    modal.style.display = "flex"/*"block"*/;
     modalImg.src = slideImg.src;
   });
 });

@@ -126,9 +126,13 @@ p + p {
 .modal {
   user-select: none;
   display: none; 
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: 100;
-  padding-top: 60px;
+  padding-block-start: 2rem;
   left: 0;
   top: 0;
   width: 100%;
@@ -142,16 +146,17 @@ p + p {
   display: block;
   max-width: 90%;
   max-height: 90%;
+  padding-block-end: 5rem;
 }
 
 #closeBtn {
   position: absolute;
-  top: 30px;
-  right: 45px;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 3rem;
   color: var(--modal-x-color);
   background: none;
   border: none;
-  font-size: 3rem;
   cursor: pointer;
 
   &:hover {
