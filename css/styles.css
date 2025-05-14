@@ -74,6 +74,10 @@ h1 {
   padding-block-end: 1.5rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 /* ================= Utility Classes ================= */
 .borderBtn {
