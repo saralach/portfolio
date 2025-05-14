@@ -26,15 +26,30 @@ h1 {
   max-width: 90%;
   text-align: center;
   margin-block-end: 1.25rem;
+
+  &.lightBlueBg {
+    background-color: #dfe3e9;
+  }
 }
 
 section {
-  margin-block-end: 1.25rem;
+  margin-block-end: 1.75rem /*1.375rem*/;
 }
 
 h3 {
-  padding-block-end: .375rem;
+  padding-block-end: .5rem /*.375rem*/;
 }
+
+h4 {
+  margin-block-start: 1.25rem;
+  margin-block-end: .375rem;
+}
+
+p + p {
+  margin-block-start: .825rem /*.75rem*/;
+}
+
+
 
 #tools {
   li {
