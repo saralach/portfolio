@@ -35,6 +35,10 @@ header nav {
   margin-inline-end: 2rem;
 }
 
+#logoimg {
+  max-width: 34px;
+}
+
 #themetoggle {
   background-color: inherit;
   border: none;
