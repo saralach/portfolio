@@ -19,6 +19,7 @@ header nav {
     padding-block: .5rem;
     padding-inline: 1rem;
     font-weight: 500;
+    color: var(--text-color-500);
   }
 
   a {
