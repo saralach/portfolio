@@ -64,6 +64,7 @@ section#projects {
   }
 }
 
+
 /* ============ Image Background Colors ============ */
 #chocobars .projimg {
   background-color: #f1dde3;
@@ -107,9 +108,35 @@ section#projects {
 }
 
 
-/* ================= Media Queries ================= */
+
+
+/* ================== Media Queries ================== */
+
+/* ---- extra-large screens -------------------------- */
 @media screen and (min-width: 1200px) {
   section#projects {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+/* ---- xs screens (phones & sm tablets) ------------- */
+@media screen and (max-width: 575px) { 
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  section#projects {
+    grid-template-columns: 1fr;
+  }
+
+  .projimg {
+    height: 18rem;
+  }
+
+  .projectcard {
+    padding-block-end: .75rem;
+    padding-inline: .75rem;
+  }
+
 }

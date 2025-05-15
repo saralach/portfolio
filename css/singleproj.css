@@ -1,39 +1,9 @@
-#backBtn {
-  margin-block-start: 1.25rem;
-  font-size: .8rem;
+section {
+  margin-block-end: 1.75rem /*1.375rem*/;
 }
 
 h1 {
   padding-block-start: 1.125rem;
-}
-
-#projDetails {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  font-size: 1.2rem;
-}
-
-#textContent {
-  grid-column: 2 / 2;
-  grid-row: 1 / 1;
-}
-
-#mainImg {
-  margin-inline: 1rem;
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
-  max-width: 90%;
-  text-align: center;
-  margin-block-end: 1.25rem;
-
-  &.lightBlueBg {
-    background-color: #dfe3e9;
-  }
-}
-
-section {
-  margin-block-end: 1.75rem /*1.375rem*/;
 }
 
 h3 {
@@ -49,7 +19,35 @@ p + p {
   margin-block-start: .825rem /*.75rem*/;
 }
 
+#backBtn {
+  margin-block-start: 1.25rem;
+  font-size: .8rem;
+}
 
+#projDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  font-size: 1.2rem;
+}
+
+#mainImg {
+  margin-inline: 1rem;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  max-width: 90%;
+  text-align: center;
+  margin-block-end: 1.25rem;
+}
+
+#mainImg.lightBlueBg {
+  background-color: #dfe3e9;
+}
+
+#textContent {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
 
 #tools {
   li {
@@ -164,19 +162,7 @@ p + p {
   }
 }
 
-
-/* ============ Next/Previous Project Nav ============ */
-#projNav {
-  border-block-start: var(--page-divider);
-  padding-block-start: 1rem;
-  display: flex;
-  flex-direction: row;
-  padding-inline: 2rem;
-  justify-content: space-between;
-}
-
-
-
+/* ----- For WILD Email Page ----- */
 #emailContent {
   border-block-start: var(--page-divider);
   padding-block-start: 1rem;
@@ -188,4 +174,78 @@ p + p {
   td {
     line-height: 0;
   }
+}
+
+
+/* ============ Next/Previous Project Nav ============ */
+#projNav {
+  border-block-start: var(--page-divider);
+  padding-block-start: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding-inline: 2rem;
+  justify-content: space-between;
+}
+
+  
+#prevProjBtn span {
+  padding-inline-start: .375rem;
+  padding-inline-end: .125rem;
+}
+
+#nextProjBtn span {
+  padding-inline-start: .125rem;
+  padding-inline-end: .375rem;
+}
+
+
+/* ================== Media Queries ================== */
+
+/* ---- xs screens (phones & sm tablets) ------------- */
+@media screen and (max-width: 575px) { 
+
+  #projDetails {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  #mainImg {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    margin-block-end: 1.75rem;
+  }
+
+  #textContent {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+
+  #projNav {
+    padding-inline: .5rem;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      
+      span {
+        text-align: center;
+        width: min-content;
+        
+      }
+    }
+
+  }
+
+  #prevProjBtn span {
+    padding-inline-start: .625rem;
+    padding-inline-end: .125rem;
+  }
+
+  #nextProjBtn span {
+    padding-inline-start: .125rem;
+    padding-inline-end: .625rem;
+  }
+
 }

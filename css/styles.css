@@ -118,3 +118,23 @@ a {
     stroke-width: 1px;
   }
 }
+
+/* ================== Media Queries ================== */
+
+/* ---- xs screens (phones & sm tablets) ------------- */
+@media screen and (max-width: 575px) { 
+
+  :root {
+    font-size: .9rem;
+  }
+
+  main {
+    padding-inline: .25rem;
+    padding-block-end: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+}
