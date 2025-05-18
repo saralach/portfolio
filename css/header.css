@@ -60,7 +60,7 @@ header a::after {
   width: 0;
   height: 2px;
   position: absolute;
-  background-color: var(--text-color-200);
+  background-color: var(--accent-color-800);
   top: 110%;
   left: 0;
 }
@@ -70,8 +70,16 @@ header a:hover::after {
   transition: width 0.5s;
 }
 
+header a:hover {
+  color: var(--accent-color-800);
+}
+
+[data-theme="dark"] header a::after {
+  background-color: var(--accent-color-200);
+}
+
 [data-theme="dark"] header a:hover {
-  color: var(--text-color-200);
+  color: var(--accent-color-200);
 }
 
 
