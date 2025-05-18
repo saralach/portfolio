@@ -15,28 +15,27 @@ section#projects {
   border-radius: 1rem;
   background-color: var(--bg-color-400);
   text-decoration: none;
-
-  h4, .category, .toolscontainer {
-    margin-inline: .5rem;
-    color: var(--text-color-500);
-  }
-
-  h4 {
-    font-size: 1.25rem;
-  }
-
-  .category {
-    margin-block-start: .25rem;
-    color: var(--text-color-400);
-  }
-
-  &:hover {
-    img {
-      transform: scale(1.1, 1.1);
-      transition-duration: .4s;
-    }
-  }
 }
+
+.projectcard h4, .projectcard .category, .projectcard .toolscontainer {
+  margin-inline: .5rem;
+  color: var(--text-color-500);
+}
+
+.projectcard h4 {
+  font-size: 1.25rem;
+}
+
+.projectcard .category {
+  margin-block-start: .25rem;
+  color: var(--text-color-400);
+}
+
+.projectcard:hover img {
+  transform: scale(1.1, 1.1);
+  transition-duration: .4s;
+}
+
 
 
 /* ============ Project Thumbnail Image ============ */
@@ -54,14 +53,14 @@ section#projects {
   max-height: 20rem;
   height: 20rem;
   user-select: none;
+}
 
-  img {
-    margin: 1.5rem;
-    max-width: 85%;
-    max-height: 85%;
-    object-fit: cover;
-    border-radius: .625rem;
-  }
+.projimg img {
+  margin: 1.5rem;
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: cover;
+  border-radius: .625rem;
 }
 
 
@@ -90,23 +89,36 @@ section#projects {
   flex-wrap: wrap;
   gap: .375rem;
   margin-block-start: .625rem;
-
-  p {
-    color: #f3f3f3;
-    background-color: #7692ee;
-    padding-inline: .625rem;
-    padding-block-start: .125rem;
-    padding-block-end: .25rem;
-    border-radius: .75rem;
-    font-size: 0.875rem;
-
-    &.ps { background-color: var(--color-ps); }
-    &.ai { background-color: var(--color-ai); }
-    &.id { background-color: var(--color-id); }
-    &.watercolor { background-color: var(--color-misc); }
-  }
 }
 
+.toolscontainer p, .toolscontainer li {
+  list-style: none;
+  color: #f3f3f3;
+  background-color: #7692ee;
+  padding-inline: .625rem;
+  padding-block-start: .125rem;
+  padding-block-end: .25rem;
+  border-radius: .75rem;
+  font-size: 0.875rem;
+}
+
+/* -------- Tool / Technology Colors -------- */
+.toolscontainer .ps { background-color: var(--color-ps); }
+.toolscontainer .ai { background-color: var(--color-ai); }
+.toolscontainer .id { background-color: var(--color-id); }
+.toolscontainer .watercolor { background-color: var(--color-misc); }
+
+.toolscontainer .html { background-color: #bd3b3b; }
+.toolscontainer .css { background-color: #4d59c5; }
+.toolscontainer .js { background-color: #4f86cf; }
+.toolscontainer .ts { background-color: #d39539; }
+.toolscontainer .react { background-color: #4cb8c0; }
+.toolscontainer .nodejs { background-color: #70a161; }
+.toolscontainer .nextjs { background-color: #5b708b; }
+.toolscontainer .rest { background-color: #af7462; }
+.toolscontainer .aspnet { background-color: #7062af; }
+.toolscontainer .mongodb { background-color: #619267; }
+.toolscontainer .vs { background-color: #9762af; }
 
 
 

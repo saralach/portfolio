@@ -1,3 +1,6 @@
+const href = window.location.href;
+const rootHref = href.includes("github") ? "/portfolio": "";
+
 const template = document.createElement('template');
 
 template.innerHTML = `
@@ -8,8 +11,9 @@ template.innerHTML = `
         <path d="M18.23,0c2.5.1,4.88.67,6.93,2.14,1.87,1.34,2.93,3.21,2.89,5.58-.06,3.19-3.26,5.6-6.36,4.83-1.95-.48-3.24-1.65-3.81-3.58-.17-.57-.13-1.16-.01-1.74.07-.35.29-.45.56-.17.81.84,1.77.9,2.76.47.95-.42,1.47-1.43,1.33-2.55-.15-1.17-.95-1.91-1.99-2.22-1.97-.6-3.89-.52-5.56.91-1.58,1.35-1.9,4.05-.76,5.78,1.06,1.62,2.7,2.41,4.33,3.23,1.61.8,3.33,1.37,4.89,2.28.32.19.61.41.91.64.1.07.24.18.15.32-.08.12-.22.05-.33.01-1.11-.34-2.21-.68-3.39-.68-1.54,0-3,.36-4.44.87-.15.05-.29.11-.44.02-1.62-.89-3.38-1.5-4.95-2.5-1.12-.71-2.14-1.52-2.74-2.75-.83-1.72-.81-3.45.05-5.13C9.98,2.41,12.86.7,16.48.13c.57-.09,1.16-.09,1.75-.13Z"/>
       </svg>
       <ul>
-        <li><a href="/portfolio/">Projects</a></li>
-        <li><a href="/portfolio/about.html">About</a></li>
+        <li><a href="${rootHref}/projects/dev">Development Projects</a></li>
+        <li><a href="${rootHref}/projects/design">Design Projects</a></li>
+        <li><a href="${rootHref}/about.html">About</a></li>
       </ul>
       <button id="themetoggle" onclick="switchTheme()">
         <svg width="24.63" height="24.65" viewBox="0 0 24.63 24.65" xmlns="http://www.w3.org/2000/svg">

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Grind Cafe Menu | Sara Lachajewski</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="../../js/theme.js"></script>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/header.css">
+  <link rel="stylesheet" href="../../css/singleproj.css">
+</head>
+
+
+<body>
+  <!-- Header / Navigation Bar -->
+  <script src="../../js/header.js"></script>
+
+  <!-- Main Page Content -->
+  <main>
+    <a id="backBtn" class="borderBtn borderBtnSm" href="./">
+      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9">
+        <polyline points="6 1 1 4.5 6 9"/>
+      </svg>
+      &nbsp;All Projects
+    </a>
+
+    <h1>The Grind Cafe Menu</h1>
+
+    <!-- -------------- PROJECT DETAILS -------------- -->
+    <div id="projDetails">
+
+      <img id="mainImg" src="../../images/TheGrind/menu-mockup.png"
+      alt="The Grind Cafe Menu Mockup"/>
+
+      <div id="textContent">
+
+        <section id="timeline">
+          <h3>Timeline</h3>
+          <p>October 2024</p>
+        </section>
+
+        <section id="tools">
+          <h3>Software & Tools</h3>
+          <ul>
+            <li>Illustrator</li>
+            <li>InDesign</li>
+            <li>Photoshop</li>
+          </ul>
+        </section>
+
+        <section id="overview">
+          <h3>Project Overview</h3>
+          <p>
+            This project required me to develop a fictional company as well as a logo and a menu 
+            for that company. The company idea I came up with was "The Grind", a cafe that is 
+            designed to be a study spot for high school and college students. With this idea 
+            in mind, I selected food items that would be appealing to this demographic and also 
+            contain ingredients that promote focus and concentration. I also green as the primary
+            color because in color psychology it is known to promote concentration as well. I also
+            used earth tones to add a feel of clean and natural food.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- ------------------ GALLERY ------------------ -->
+    <section id="gallery">
+
+      <!-- Gallery arrows -->
+      <button id="previousSlideBtn" class="galleryArrowBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14.5" height="22" viewBox="0 0 14.5 22">
+          <polyline  points="13.5 1 1 11 13.5 21"/>
+        </svg>
+      </button>
+
+      <button id="nextSlideBtn" class="galleryArrowBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14.5" height="22" viewBox="0 0 14.5 22">
+          <polyline points="1 1 13.5 11 1 21"/>
+        </svg>
+      </button>
+
+
+      <!-- Gallery slide images -->
+      <div id="imageSlides">
+
+        <figure class="active">
+          <img src="../../images/TheGrind/logo-sketches-nobg.png" 
+               alt="Rough Sketches in Sketchbook" />
+          <figcaption>
+            Brainstorming & Sketches
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../../images/TheGrind/menu-logo.png" 
+               alt="The Grind Logo"/>
+          <figcaption>
+            The Grind Logo Design (Illustrator)
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../../images/TheGrind/menu-logo-clearspace.png" 
+               alt="Logo with Clear Space Guidelines" />
+          <figcaption>
+            The Grind Logo Design with Clear Space Guidelines (Illustrator)
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../../images/TheGrind/menu-front.png" 
+               alt="Front Side of Menu"/>
+          <figcaption>
+            Front Side of Menu (InDesign)
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../../images/TheGrind/menu-back.png" 
+               alt="Back Side of Menu"/>
+          <figcaption>
+            Back Side of Menu (InDesign)
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../../images/TheGrind/menu-mockup.png" 
+               alt="Menu on clipboard beside a coffee cup"/>
+          <figcaption>
+            Menu Mockup (Photography & Photoshop)
+          </figcaption>
+        </figure>
+        
+      </div>
+    </section>
+
+    <!-- --------------- GALLERY MODAL --------------- -->
+    <div id="galleryModal" class="modal">
+      <button id="closeBtn">&times;</button>
+      <img id="modalImg" class="modalContent">
+    </div>
+
+    <script src="../../js/gallery.js"></script>
+
+    <!-- ------------ PROJECT NAVIGATION ------------- -->
+
+    <nav id="projNav">
+
+      <a id="prevProjBtn" class="borderBtn" href="A_Taste_of_Home_Chocolate_Bars.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11">
+          <polyline points="7 1 1 5.5 7 11"/>
+        </svg>
+        <span>Previous Project</span>
+      </a>
+
+      <a id="nextProjBtn" class="borderBtn" href="Birds_of_Wisconsin_Book.html">
+        <span>Next Project</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11">
+          <polyline points="1 1 7 5.5 1 11"/>
+        </svg>
+      </a>
+    </nav>
+  </main>
+
+
+
+</body>
+</html>
