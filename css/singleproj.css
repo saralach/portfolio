@@ -1,18 +1,9 @@
-section {
-  margin-block-end: 1.75rem /*1.375rem*/;
-}
+/*section {
+  margin-block-end: 1.75rem;
+}*/
 
 h1 {
   padding-block-start: 1.125rem;
-}
-
-h3 {
-  padding-block-end: .5rem /*.375rem*/;
-}
-
-h4 {
-  margin-block-start: 1.25rem;
-  margin-block-end: .375rem;
 }
 
 p + p {

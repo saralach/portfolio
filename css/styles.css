@@ -16,8 +16,10 @@
 
   --accent-color-100: #dfe9e1;
   --accent-color-200: #d6eedc;
-  --accent-color-500: #a3b693;
-  --accent-color-700: #638357;
+  --accent-color-300: #b5d4a9;
+  --accent-color-500: #b0ceb4;
+    --accent-color-600: #a0cfa8;
+  --accent-color-700: #65866c;
 
   /* Tool Colors */
   --color-ai: #d39539;
@@ -69,15 +71,27 @@ main {
   padding-block-end: 3rem;
 }
 
+section {
+  margin-block-end: 1.75rem;
+}
+
 h1 {
   padding-block-start: 1.5rem;
   padding-block-end: 1.5rem;
 }
 
+h3, h2 {
+  padding-block-end: .5rem /*.375rem*/;
+}
+
+h4 {
+  margin-block-start: 1.25rem;
+  margin-block-end: .375rem;
+}
+
 a {
   text-decoration: none;
 }
-
 
 /* ================= Utility Classes ================= */
 .borderBtn {

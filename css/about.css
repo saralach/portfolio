@@ -1,0 +1,129 @@
+:root {
+  --skill-bar-height: .75rem;
+}
+
+h3 {
+  padding-block-start: .5rem /*.75rem*/;
+  padding-block-end: .5rem /*.825rem*/;
+}
+
+article {
+  margin-block-end: 1.5rem;
+}
+
+
+#greeting {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: block;
+  margin-block-end: 1rem;
+}
+
+
+#skills ul {
+  display: flex;
+  flex-direction: row;
+  row-gap: .75rem;
+  column-gap: .75rem;
+}
+
+#skills li {
+  list-style: none;
+  padding-inline: .75rem;
+  padding-block: .5rem;
+  color: var(--bg-color-500);
+  background-color: var(--text-color-500);
+  border-radius: .635rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap; /* make text not wrap */
+  font-size: .9rem;
+}
+
+#skills li svg {
+  /*width: 1.25rem;*/
+  height: 1.25rem;
+  fill: var(--bg-color-500);
+  padding-inline-end: .75rem;
+}
+
+#skills #devSkills li svg {
+  height: 1.375rem;
+}
+
+
+[data-theme="dark"] #skills li {
+  border: solid 1px var(--text-color-500);
+  background-color: var(--bg-color-500);
+  color: var(--text-color-500);
+}
+
+[data-theme="dark"] #skills li svg {
+  fill: var(--text-color-500);
+}
+
+/*#skillsContainer article {
+  margin-block-end: 1.75rem;
+}
+
+#skillsContainer ul {
+  margin-inline-start: 1rem;
+}
+
+li {
+  display: flex;
+  grid-template-columns: 16rem 2fr;
+  align-items: center;
+  list-style: none;
+  margin-block-end: .75rem;
+}
+
+li p {
+  width: 16rem;
+}
+
+
+
+.skillBar {
+  margin-inline: 1rem;
+  height: var(--skill-bar-height);
+  width: 80%;
+  max-width: 20rem;
+  background-color: var(--bg-color-300);
+  border-radius: .5rem;
+  border: var(--page-divider);
+}
+
+.skillBar::after {
+  content: "";
+  display: block;
+  border-radius: .5rem;
+}
+
+
+
+.basic::after {
+  background-color: #e3eb74;
+  height: var(--skill-bar-height);
+  width: 55%;
+}
+
+.advanced::after {
+  background-color: #aad876;
+  height: var(--skill-bar-height);
+  width: 85%;
+}
+
+.expert::after {
+  background-color: #50a150;
+  height: var(--skill-bar-height);
+  width: 100%;
+}
+
+#colorKey {
+  font-size: .825rem;
+}*/
+
+
+

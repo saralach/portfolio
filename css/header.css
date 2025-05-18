@@ -51,6 +51,29 @@ header nav {
   }
 }
 
+header a { 
+  position: relative;
+}
+
+header a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: var(--text-color-200);
+  top: 110%;
+  left: 0;
+}
+
+header a:hover::after {
+  width: 100%;
+  transition: width 0.5s;
+}
+
+[data-theme="dark"] header a:hover {
+  color: var(--text-color-200);
+}
+
 
 /* ================== Media Queries ================== */
 
