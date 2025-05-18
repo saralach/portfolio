@@ -1,13 +1,9 @@
-/*section {
-  margin-block-end: 1.75rem;
-}*/
-
 h1 {
   padding-block-start: 1.125rem;
 }
 
 p + p {
-  margin-block-start: .825rem /*.75rem*/;
+  margin-block-start: .825rem;
 }
 
 #backBtn {
@@ -40,16 +36,6 @@ p + p {
   grid-row: 1 / 1;
 }
 
-#tools {
-  li {
-    list-style-type: none;
-    display: inline;
-
-    &:not(li:last-child)::after {
-      content: " | "
-    }
-  }
-}
 
 /* ================= Gallery Section ================= */
 #gallery {
@@ -59,55 +45,53 @@ p + p {
   padding-inline: 2rem;
   position: relative;
   user-select: none;
+}
 
-  /* --------- Gallery Images --------- */
-  #imageSlides {
-    text-align: center;
+/* --------- Gallery Images --------- */
+#imageSlides {
+  text-align: center;
+}
 
-    figure {
-      display: none;
-      
-      &.active {
-        display: block;
-      }
+#imageSlides figure {
+  display: none;
+}
 
-      img {
+#imageSlides figure.active {
+  display: block;
+}
 
-        max-width: 100%;
-        max-height: 35rem;
-      }
+#imageSlides figure img {
+  max-width: 100%;
+  max-height: 35rem;
+}
 
-      figcaption {
-        margin-block-start: .5rem;
-        font-size: 1.1rem;
-      }
-    }
-  }
-  
-  /* --------- Gallery Arrows --------- */
-  .galleryArrowBtn {
-    background: none;
-    border: none;
-    position: absolute;
-    top: 45%;
+#imageSlides figcaption {
+  margin-block-start: .5rem;
+  font-size: 1.1rem;
+}
 
-    svg {
-      fill: none;
-      stroke: var(--text-color-200);
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-width: 3px;
-    }
-  }
-  
-  #previousSlideBtn {
-    left: 0%;
-  }
-  
-  #nextSlideBtn {
-    right: 0%;
-  }
+/* --------- Gallery Arrows --------- */
+.galleryArrowBtn {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 45%;
+}
 
+.galleryArrowBtn svg {
+  fill: none;
+  stroke: var(--text-color-200);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3px;
+}
+
+#previousSlideBtn {
+  left: 0%;
+}
+
+#nextSlideBtn {
+  right: 0%;
 }
 
 
@@ -115,7 +99,6 @@ p + p {
 .modal {
   user-select: none;
   display: none; 
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -147,24 +130,10 @@ p + p {
   background: none;
   border: none;
   cursor: pointer;
-
-  &:hover {
-    color: var(--modal-x-hover-color);
-  }
 }
 
-/* ----- For WILD Email Page ----- */
-#emailContent {
-  border-block-start: var(--page-divider);
-  padding-block-start: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  /* Remove gaps between images */
-  td {
-    line-height: 0;
-  }
+#closeBtn:hover {
+  color: var(--modal-x-hover-color);
 }
 
 
@@ -178,7 +147,6 @@ p + p {
   justify-content: space-between;
 }
 
-  
 #prevProjBtn span {
   padding-inline-start: .375rem;
   padding-inline-end: .125rem;
@@ -188,6 +156,7 @@ p + p {
   padding-inline-start: .125rem;
   padding-inline-end: .375rem;
 }
+
 
 
 /* ================== Media Queries ================== */
@@ -213,20 +182,18 @@ p + p {
 
   #projNav {
     padding-inline: .5rem;
+  }
 
-    a {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      
-      span {
-        text-align: center;
-        width: min-content;
-        
-      }
-    }
+  #projNav a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  #projNav a span {
+    text-align: center;
+    width: min-content;
   }
 
   #prevProjBtn span {
@@ -239,4 +206,4 @@ p + p {
     padding-inline-end: .625rem;
   }
 
-}
+} /* end xs screens */

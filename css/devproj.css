@@ -1,0 +1,34 @@
+#githubLink  {
+  padding-inline: 1rem;
+  padding-block: .5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-block-end: 2rem;
+}
+
+#githubLink:hover {
+  background-color: var(--accent-color-500);
+}
+
+#githubLink svg {
+  height: 1.75rem;
+  fill: var(--bg-color-500);
+  margin-inline-end: .75rem;
+}
+
+#tools ul li {
+  display: inline-block;
+  list-style: none;
+  background-color: var(--bg-color-500);
+  color: var(--text-color-500);
+  border: 1px solid var(--text-color-500);
+  border-radius: .5rem;
+  padding-block: .375rem;
+  padding-inline: .5rem;
+  margin-block: .25rem;
+  margin-inline: .125rem;
+  font-size: .9rem;
+  font-weight: 500;
+  white-space: nowrap; /* make text not wrap */
+
+}

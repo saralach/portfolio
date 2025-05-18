@@ -103,10 +103,10 @@ section#projects {
 }
 
 /* -------- Tool / Technology Colors -------- */
-.toolscontainer .ps { background-color: var(--color-ps); }
-.toolscontainer .ai { background-color: var(--color-ai); }
-.toolscontainer .id { background-color: var(--color-id); }
-.toolscontainer .watercolor { background-color: var(--color-misc); }
+.toolscontainer .ps { background-color: #376a94; }
+.toolscontainer .ai { background-color: #d39539; }
+.toolscontainer .id { background-color: #a31a4f; }
+.toolscontainer .watercolor { background-color: #98599e; }
 
 .toolscontainer .html { background-color: #bd3b3b; }
 .toolscontainer .css { background-color: #4d59c5; }
@@ -115,10 +115,12 @@ section#projects {
 .toolscontainer .react { background-color: #4cb8c0; }
 .toolscontainer .nodejs { background-color: #70a161; }
 .toolscontainer .nextjs { background-color: #5b708b; }
-.toolscontainer .rest { background-color: #af7462; }
+.toolscontainer .rest { background-color: #c47158; }
 .toolscontainer .aspnet { background-color: #7062af; }
 .toolscontainer .mongodb { background-color: #619267; }
 .toolscontainer .vs { background-color: #9762af; }
+.toolscontainer .jest { background-color: #964b4b; }
+.toolscontainer .vscode { background-color: #309dcf; }
 
 
 

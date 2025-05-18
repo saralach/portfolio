@@ -1,0 +1,24 @@
+#tools li {
+  list-style-type: none;
+  display: inline;
+}
+
+#tools li:not(li:last-child)::after {
+  content: " | ";
+}
+
+
+
+
+/* ----- For WILD Email Page ----- */
+#emailContent {
+  border-block-start: var(--page-divider);
+  padding-block-start: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#emailContent td {
+  line-height: 0; /* Remove gaps between images */
+}
