@@ -9,25 +9,28 @@ header nav {
   padding-block: .75rem;
   border-block-end: var(--page-divider);
   user-select: none;
-
-  ul {
-    padding-inline-start: 0;
-  }
-  
-  li {
-    list-style: none;
-    display: inline;
-    padding-block: .5rem;
-    padding-inline: 1rem;
-    font-weight: 500;
-    color: var(--text-color-500);
-  }
-
-  a {
-    text-decoration: none;
-    color: var(--text-color-500);
-  }
 }
+
+header nav ul {
+  padding-inline-start: 0;
+}
+
+header nav li {
+  list-style: none;
+  display: inline;
+  padding-block: .5rem;
+  padding-inline: 1rem;
+  font-weight: 500;
+  color: var(--text-color-500);
+}
+
+
+header nav a {
+  text-decoration: none;
+  color: var(--text-color-200);
+}
+
+
 
 #logosvg {
   fill: var(--text-color-500);
@@ -40,15 +43,15 @@ header nav {
 #themetoggle {
   background-color: inherit;
   border: none;
+}
 
-  svg {
-    fill: none;
-    stroke: var(--text-color-500);
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 1.5px;
-    max-width: 24.65px;
-  }
+#themetoggle svg {
+  fill: none;
+  stroke: var(--text-color-500);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5px;
+  max-width: 24.65px;
 }
 
 header a { 
