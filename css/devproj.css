@@ -1,3 +1,36 @@
+
+
+#projDetails li {
+  margin-block-end: .375rem;
+}
+
+#mainImg {
+  border: var(--page-divider);
+}
+
+#tools ul li {
+  display: inline-block;
+  list-style: none;
+  background-color: var(--bg-color-500);
+  color: var(--text-color-500);
+  border: 1px solid var(--text-color-500);
+  border-radius: .5rem;
+  padding-block: .375rem;
+  padding-inline: .5rem;
+  margin-block: .25rem;
+  margin-inline: .125rem;
+  font-size: .9rem;
+  font-weight: 500;
+  white-space: nowrap; /* make text not wrap */
+}
+
+#features ul {
+  margin-inline-start: 1.5rem;
+  font-size: 1.125rem;
+}
+
+
+/* ------------- GitHub Repo Link -------------- */
 #githubLink  {
   padding-inline: 1rem;
   padding-block: .5rem;
@@ -16,19 +49,45 @@
   margin-inline-end: .75rem;
 }
 
-#tools ul li {
-  display: inline-block;
-  list-style: none;
-  background-color: var(--bg-color-500);
-  color: var(--text-color-500);
-  border: 1px solid var(--text-color-500);
-  border-radius: .5rem;
-  padding-block: .375rem;
-  padding-inline: .5rem;
-  margin-block: .25rem;
-  margin-inline: .125rem;
-  font-size: .9rem;
-  font-weight: 500;
-  white-space: nowrap; /* make text not wrap */
 
+/* ------------------ Gallery ------------------ */
+#gallery {
+  position: relative;
 }
+
+#gallery h2 {
+  margin-block-end: .5rem;
+  text-align: center;
+}
+
+#imageSlides {
+  height: 75vh;
+  max-width: 60rem;
+  margin-inline: auto; /* center */
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: solid 2px var(--bg-color-700);
+  margin-block-end: 4rem;
+}
+
+#imageSlides figure img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  /* remove gap between image and border when scrolled to bottom*/
+  line-height: 0;
+}
+
+figcaption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 101%;
+  line-height: normal;
+}
+
+/*main #projDetails {
+  display: block;
+}*/

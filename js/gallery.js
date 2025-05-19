@@ -1,4 +1,5 @@
 let currentSlideIndex = 0;
+const slidesContainer = document.getElementById("imageSlides");
 const slides = document.querySelectorAll("#gallery figure");
 const totalSlides = slides.length;
 
@@ -19,6 +20,7 @@ function changeSlide(index) {
   slides[currentSlideIndex].classList.remove("active");
   currentSlideIndex = (index + totalSlides) % totalSlides;
   slides[currentSlideIndex].classList.add("active");
+  slidesContainer.scrollTo(0, 0);
 }
 
 

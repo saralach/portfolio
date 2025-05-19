@@ -16,8 +16,8 @@
   <!-- CSS -->
   <link rel="stylesheet" href="../../css/styles.css">
   <link rel="stylesheet" href="../../css/header.css">
-  <link rel="stylesheet" href="../../css/devproj.css">
   <link rel="stylesheet" href="../../css/singleproj.css">
+  <link rel="stylesheet" href="../../css/devproj.css">
 </head>
 
 
@@ -34,19 +34,19 @@
       &nbsp;All Projects
     </a>
 
-    <h1>Stardew Valley Game Guide Website</h1>
+    <h1>Stardew Valley Game Guide & Progress Tracker Website</h1>
 
     <!-- -------------- PROJECT DETAILS -------------- -->
-    <div id="projDetails">
+    <section id="projDetails">
 
-      <img id="mainImg" src="../../images/ChocolateBars/Chocolate-Bar-Mockup.png"
-      alt="A Taste of Home Chocolate Bar Packaging Mockups"/>
+      <img id="mainImg" src="../../images/dev/stardew/Stardew_Guide_Thumbnail.png"
+      alt="Stardew Guide Perfection Tracker Page Screenshot"/>
 
       <div id="textContent">
 
         <section id="timeline">
           <h3>Timeline</h3>
-          <p>January &#8211; May 2025</p>
+          <p>January 2025 &#8211; Present</p>
         </section>
 
         <section id="tools">
@@ -67,16 +67,30 @@
         <section id="overview">
           <h3>Project Overview</h3>
           <p>
-            For this project, I created a website that functions as a guide for the video game 
-            "Stardew Valley". I came up with the idea for this project as a way to challenge 
-            myself to learn a variety of technologies that were previously unfamiliar to me. 
-            None of these topics were taught in any course at my college, so I had to learn them 
-            independently. To learn these technologies, I utilized online courses and tutorials 
-            and read lots and lots of documentation. Though I am still by no means an expert 
-            in many of these technologies, I feel that I gained valuable insights and skills 
-            throughout this experience, and I better understand what all goes into a modern 
-            full-stack web application.
+            For this project, I created a website that functions as both a wiki/guide and a 
+            progress tracker for the video game "Stardew Valley". I came up with the idea for 
+            this project as a way to challenge myself to learn a variety of technologies that 
+            were previously unfamiliar to me. None of these topics were taught in any course 
+            at my college, so I had to learn them independently. To learn these technologies, 
+            I utilized online courses and tutorials and read lots and lots of documentation. 
           </p>
+          <p>
+            Though I am still by no means an expert in many of these technologies, I feel that 
+            I gained valuable insights and skills throughout this experience, and I better 
+            understand what all goes into a modern full-stack web application.
+          </p>
+        </section>
+
+        <section id="features">
+          <h3>Features</h3>
+          <ul>
+            <li>REST API for database retrieval and manipulation</li>
+            <li>User account / authentication functionality</li>
+            <li>Retrieves game information from database</li>
+            <li>Stores & retrieves user checkbox data from database</li>
+            <li>Automated testing using Jest</li>
+
+          </ul>
         </section>
 
         <a id="githubLink" class="inlineIconLabel" target="_blank" 
@@ -87,10 +101,12 @@
           View GitHub Repository
         </a>
       </div>
-    </div>
+    </section>
 
     <!-- ------------------ GALLERY ------------------ -->
     <section id="gallery">
+
+      <h2>Site Screenshots</h2>
 
       <!-- Gallery arrows -->
       <button id="previousSlideBtn" class="galleryArrowBtn">
@@ -110,42 +126,74 @@
       <div id="imageSlides">
 
         <figure class="active">
-          <img src="../../images/ChocolateBars/purse-lifestyle-photo.png" 
-               alt="Yuzu Citrus Chocolate Bar Lifestyle Photo" />
+          <img src="../../images/dev/stardew/Stardew_Guide_Home.png" 
+               alt="Stardew Guide Website Home Page Screenshot" />
           <figcaption>
-            A Taste of Home Yuzu Citrus Chocolate Bar Lifestyle Photo (Photoshop)
+            Home Page
+          </figcaption>
+        </figure>
+        
+        <figure>
+          <img src="../../images/dev/stardew/Stardew_Guide_Tracker_Perfection_2.png" 
+               alt="Stardew Guide Website Perfection Tracker Page Screenshot"/>
+          <figcaption>
+            Perfection Tracker Page
           </figcaption>
         </figure>
 
         <figure>
-          <img src="../../images/ChocolateBars/suitcase-lifestyle-photo.png" 
-               alt="Matcha Green Tea Chocolate Bar Lifestyle Photo"/>
+          <img src="../../images/dev/stardew/Stardew_Guide_Tracker_Bundles.png" 
+               alt="Stardew Guide Website Bundles Tracker Page Screenshot"/>
           <figcaption>
-            A Taste of Home Matcha Green Tea Chocolate Bar Lifestyle Photo (Photoshop)
+            Bundles Tracker Page
           </figcaption>
         </figure>
 
         <figure>
-          <img src="../../images/ChocolateBars/choco-bar-physical-boxes.png" 
-               alt="Physical Chocolate Bar Boxes" />
+          <img src="../../images/dev/stardew/Stardew_Guide_Villagers.png" 
+               alt="Stardew Guide Website Villagers Page Screenshot"/>
           <figcaption>
-            A Taste of Home Physical Chocolate Bar Boxes
+            Villagers Page
           </figcaption>
         </figure>
 
         <figure>
-          <img src="../../images/ChocolateBars/sando-outer.png" 
-               alt="Fruit Sando Chocolate Bar Outer Package Dieline"/>
+          <img src="../../images/dev/stardew/Stardew_Guide_Villagers_Harvey.png" 
+               alt="Stardew Guide Website Single Villager Page Screenshot" />
           <figcaption>
-            A Taste of Home Fruit Sando Chocolate Bar Outer Packaging Dieline (Illustrator)
+            Single Villager Page
           </figcaption>
         </figure>
 
         <figure>
-          <img src="../../images/ChocolateBars/sando-inner.png" 
-               alt="Fruit Sando Chocolate Bar Outer Package Dieline"/>
+          <img src="../../images/dev/stardew/Stardew_Guide_Items.png" 
+               alt="Stardew Guide Website Items Page Screenshot"/>
           <figcaption>
-            A Taste of Home Fruit Sando Chocolate Bar Inner Packaging Dieline (Illustrator)
+            Items Page
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../../images/dev/stardew/Stardew_Guide_Items_Diamond.png" 
+               alt="Stardew Guide Website Diamond Page Screenshot"/>
+          <figcaption>
+            Items Page Example &mdash; Diamond
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../../images/dev/stardew/Stardew_Guide_Items_Sunfish.png" 
+               alt="Stardew Guide Website Sunfish Page Screenshot"/>
+          <figcaption>
+            Items Page Example &mdash; Sunfish
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="../../images/dev/stardew/Stardew_Guide_Items_Gold_Bar.png" 
+               alt="Stardew Guide Website Gold Bar Page Screenshot"/>
+          <figcaption>
+            Items Page Example &mdash; Gold Bar
           </figcaption>
         </figure>
         

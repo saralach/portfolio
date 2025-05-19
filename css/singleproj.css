@@ -2,20 +2,30 @@ h1 {
   padding-block-start: 1.125rem;
 }
 
+h3 {
+  font-size: 1.375rem;
+}
+
+#projDetails p, #projDetails li {
+  font-size: 1.125rem /*1.2rem*/;
+  line-height: 130%; 
+}
+
 p + p {
-  margin-block-start: .825rem;
+  margin-block-start: .875rem;
 }
 
 #backBtn {
   margin-block-start: 1.25rem;
-  font-size: .8rem;
+  font-size: .75rem;
 }
+
 
 #projDetails {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  font-size: 1.2rem;
+  /*font-size: 1.2rem;*/
 }
 
 #mainImg {
@@ -60,14 +70,14 @@ p + p {
   display: block;
 }
 
-#imageSlides figure img {
+/*#imageSlides figure img {
   max-width: 100%;
   max-height: 35rem;
-}
+}*/
 
 #imageSlides figcaption {
   margin-block-start: .5rem;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
 }
 
 /* --------- Gallery Arrows --------- */

@@ -80,6 +80,11 @@ h3, h2 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* ================= Utility Classes ================= */
