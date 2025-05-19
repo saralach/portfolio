@@ -24,13 +24,10 @@ header nav li {
   color: var(--text-color-500);
 }
 
-
 header nav a {
   text-decoration: none;
   color: var(--text-color-200);
 }
-
-
 
 #logosvg {
   fill: var(--text-color-500);
@@ -43,6 +40,7 @@ header nav a {
 #themetoggle {
   background-color: inherit;
   border: none;
+  cursor: pointer;
 }
 
 #themetoggle svg {
