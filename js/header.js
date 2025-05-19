@@ -29,8 +29,6 @@ function getNavTabs() {
       tabHtml += `<li>${tab.label}</li>`;
   });
 
-  console.log(tabHtml);
-
   return tabHtml;
 }
 
