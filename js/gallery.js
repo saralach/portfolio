@@ -21,6 +21,11 @@ function changeSlide(index) {
   currentSlideIndex = (index + totalSlides) % totalSlides;
   slides[currentSlideIndex].classList.add("active");
   slidesContainer.scrollTo(0, 0);
+
+  if(slides[currentSlideIndex].classList.contains("mobile"))
+    slidesContainer.style.maxWidth = "30rem";
+  else
+    slidesContainer.style.removeProperty("max-width");
 }
 
 

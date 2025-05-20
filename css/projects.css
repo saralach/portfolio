@@ -81,6 +81,15 @@ section#projects {
   background-color: #dfe9e9;
 }
 
+#stardew .projimg {
+  background-color: #dbe4e7;
+}
+
+
+#webfishing .projimg {
+  background-color: #e1e7d8;
+}
+
 
 /* ============ Tools/Technologies Used ============ */
 .toolscontainer {
@@ -121,6 +130,7 @@ section#projects {
 .toolscontainer .vs { background-color: #9762af; }
 .toolscontainer .jest { background-color: #964b4b; }
 .toolscontainer .vscode { background-color: #309dcf; }
+.toolscontainer .cs { background-color: #781dad; }
 
 
 

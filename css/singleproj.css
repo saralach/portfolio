@@ -46,6 +46,13 @@ p + p {
   grid-row: 1 / 1;
 }
 
+.mainImgSm {
+  width: auto;
+  max-width: 90%;
+  margin-inline: auto;
+  max-height: 80vh;
+}
+
 
 /* ================= Gallery Section ================= */
 #gallery {
