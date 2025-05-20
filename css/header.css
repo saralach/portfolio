@@ -56,7 +56,7 @@ header a {
   position: relative;
 }
 
-header a::after {
+header a:not(#logoLink)::after {
   content: "";
   width: 0;
   height: 2px;
@@ -66,7 +66,7 @@ header a::after {
   left: 0;
 }
 
-header a:hover::after {
+header a:not(#logoLink):hover::after {
   width: 100%;
   transition: width 0.5s;
 }
@@ -75,11 +75,11 @@ header a:hover {
   color: var(--accent-color-800);
 }
 
-[data-theme="dark"] header a::after {
+[data-theme="dark"] header a:not(#logoLink)::after {
   background-color: var(--accent-color-200);
 }
 
-[data-theme="dark"] header a:hover {
+[data-theme="dark"] header a:not(#logoLink):hover {
   color: var(--accent-color-200);
 }
 

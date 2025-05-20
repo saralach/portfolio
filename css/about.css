@@ -20,7 +20,8 @@ section > a {
 
 #intro {
   padding-inline: 10vw;
-  padding-block: 2rem;
+  padding-block-start: 1rem;
+  padding-block-end: 2rem;
   border-block-end: var(--page-divider);
 }
 
@@ -85,7 +86,7 @@ svg.sectionLabel {
 }
 
 #codingIcon {
-  height: 1.5rem;
+  height: 1.625rem;
   padding-block: .25rem;
 }
 
